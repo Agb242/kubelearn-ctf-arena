@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				kube: {
+					"50": "#f3f2ff", 
+					"100": "#e9e6ff",
+					"200": "#d6d1ff",
+					"300": "#bcb0ff",
+					"400": "#a285ff",
+					"500": "#8b5cf6",
+					"600": "#7e3aec",
+					"700": "#6e2dd2",
+					"800": "#5b29ab",
+					"900": "#4c2589",
+					"950": "#2e1452"
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +98,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'terminal-blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'terminal-blink': 'terminal-blink 1s step-end infinite'
 			}
 		}
 	},
